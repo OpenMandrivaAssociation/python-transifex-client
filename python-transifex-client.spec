@@ -13,7 +13,7 @@ BuildArch:      noarch
 
 BuildRequires:  python3-devel
 BuildRequires:  python3dist(gitpython) < 4
-BuildRequires:  python3dist(python_slugify) => 5
+BuildRequires:  python-python_slugify >= 5
 BuildRequires:  (python3dist(requests) >= 2.19.1 with python3dist(requests) < 3)
 BuildRequires:  python3dist(setuptools)
 BuildRequires:  python3dist(six) < 2
