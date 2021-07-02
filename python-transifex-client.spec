@@ -13,15 +13,14 @@ BuildArch:      noarch
 
 BuildRequires:  python3-devel
 BuildRequires:  python3dist(gitpython) < 4
-BuildRequires:  python3dist(python_slugify > 5
+BuildRequires:  python3dist(python_slugify) => 5
 BuildRequires:  (python3dist(requests) >= 2.19.1 with python3dist(requests) < 3)
 BuildRequires:  python3dist(setuptools)
 BuildRequires:  python3dist(six) < 2
 BuildRequires:  (python3dist(urllib3) >= 1.24.2 with python3dist(urllib3) < 2)
 
 %description
-Transifex Command-Line Tool [![image]( [![image]( [![codecov]( [![PyPI
-version](
+Transifex Command-Line Tool 
 
 %prep
 %autosetup  -n %{pypi_name}-%{version}
