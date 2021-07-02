@@ -9,6 +9,7 @@ Group:          Development/Python
 License:        GPLv2
 URL:            https://www.transifex.com
 Source0:        %{pypi_name}-%{version}.tar.gz
+Patch0:		fix-requires.patch
 BuildArch:      noarch
 
 BuildRequires:  python3-devel
@@ -24,7 +25,7 @@ Transifex Command-Line Tool [![image]( [![image]( [![codecov]( [![PyPI
 version](
 
 %prep
-%autosetup -n %{pypi_name}-%{version}
+%autosetup -p1 -n %{pypi_name}-%{version}
 # Remove bundled egg-info
 rm -rf %{pypi_name}.egg-info
 
