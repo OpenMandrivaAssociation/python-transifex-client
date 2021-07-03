@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.14.3
-Release:        1
+Release:        2
 Summary:        A command line interface for Transifex
 Group:          Development/Python
 License:        GPLv2
