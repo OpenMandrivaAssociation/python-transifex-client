@@ -9,18 +9,18 @@ Group:          Development/Python
 License:        GPLv2
 URL:            https://www.transifex.com
 Source0:        %{pypi_name}-%{version}.tar.gz
-#Patch0:		fix-requires.patch
+Patch0:		fix-requires.patch
 BuildArch:      noarch
 
 BuildRequires:  python3-devel
 BuildRequires:  python3dist(gitpython) < 4
-BuildRequires:  python-python_slugify > 5
+BuildRequires:  python-python_slugify >= 5.0.2
 BuildRequires:  (python3dist(requests) >= 2.19.1 with python3dist(requests) < 3)
 BuildRequires:  python3dist(setuptools)
 BuildRequires:  python3dist(six) < 2
 BuildRequires:  (python3dist(urllib3) >= 1.24.2 with python3dist(urllib3) < 2)
 
-Requires:	python-python_slugify > 5
+Requires:	python-python_slugify >= 5.0.2
 
 %description
 Transifex Command-Line Tool 
