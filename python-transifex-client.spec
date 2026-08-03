@@ -2,8 +2,8 @@
 %global pypi_name transifex-client
 
 Name:           python-%{pypi_name}
-Version:        0.14.3
-Release:        2
+Version:        1.6.17
+Release:        1
 Summary:        A command line interface for Transifex
 Group:          Development/Python
 License:        GPLv2
